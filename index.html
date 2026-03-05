@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="blue">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- THEME SWITCHER -->
+  <div class="theme-switcher">
+    <span class="theme-label">THEME</span>
+    <button class="theme-btn active" data-theme="blue" title="Ocean Blue">
+      <span class="theme-dot blue-dot"></span>
+    </button>
+    <button class="theme-btn" data-theme="matrix" title="Matrix Green">
+      <span class="theme-dot matrix-dot"></span>
+    </button>
+    <button class="theme-btn" data-theme="white" title="Clean White">
+      <span class="theme-dot white-dot"></span>
+    </button>
+    <button class="theme-btn" data-theme="cosmic" title="Cosmic Purple">
+      <span class="theme-dot cosmic-dot"></span>
+    </button>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-text"></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-socials">
+      <a href="https://www.linkedin.com/in/ashwath25/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Ashwath2511" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="ashwathgunasekar04@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+916374284660" title="Call"><i class="fas fa-phone"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-tag reveal-up">Aspring Full-stack Developer</div>
+        <h1 class="hero-title reveal-up">
+          Hi, I'm <br/>
+          <span class="name-highlight">ASHWATH G</span>
+        </h1>
+        <p class="hero-sub reveal-up">
+          Crafting beautiful, interactive web experiences.<br/>
+          B.Tech IT Student @ Panimalar Engineering College
+        </p>
+        <div class="hero-cta reveal-up">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+        <div class="hero-stats reveal-up">
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num">2</span><span class="stat-label">Internships</span></div>
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Technologies</span></div>
+        </div>
+      </div>
+      <div class="hero-photo reveal-right">
+        <div class="photo-ring">
+          <div class="photo-glow"></div>
+          <div class="photo-frame">
+            <!-- Replace src with your actual photo path -->
+            <img src="profile.png" alt="Profile Photo" class="profile-img" id="profileImg"/>
+          </div>
+          <div class="floating-badge badge-1"><i class="fab fa-html5"></i> HTML</div>
+          <div class="floating-badge badge-2"><i class="fab fa-js"></i> JS</div>
+          <div class="floating-badge badge-3"><i class="fab fa-css3-alt"></i> CSS</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Who Am I</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal-left">
+          <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Education</h3>
+          <p>B.Tech Information Technology</p>
+          <p class="muted">Panimalar Engineering College</p>
+          <div class="tag-pill">Currently Studying</div>
+        </div>
+        <div class="about-text reveal-up">
+          <p>I'm a passionate <strong>Frontend Developer</strong> with a keen eye for design and a love for building intuitive user interfaces. Currently pursuing B.Tech IT at Panimalar Engineering College, I blend creativity with technical skills to bring ideas to life on the web.</p>
+          <p>With hands-on experience in <strong>WordPress Full Stack Development</strong> and <strong>UI/UX Design</strong> internships, I understand both the technical and design sides of web development.</p>
+          <div class="about-highlights">
+            <div class="highlight"><i class="fas fa-check-circle"></i> Clean, Responsive Code</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> UI/UX Design Principles</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> Problem-Solving Mindset</div>
+            <div class="highlight"><i class="fas fa-check-circle"></i> Fast Learner & Team Player</div>
+          </div>
+        </div>
+        <div class="about-card reveal-right">
+          <div class="about-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Location</h3>
+          <p>Chennai, Tamil Nadu</p>
+          <p class="muted">India</p>
+          <div class="tag-pill">Open to Remote</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" style="--delay:0.1s">
+          <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+          <h4>HTML5</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          <span class="skill-percent">92%</span>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.2s">
+          <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+          <h4>CSS3</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <span class="skill-percent">88%</span>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.3s">
+          <div class="skill-icon js"><i class="fab fa-js-square"></i></div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.4s">
+          <div class="skill-icon react"><i class="fab fa-react"></i></div>
+          <h4>React JS</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+          <span class="skill-percent">55% <small>(In Progress)</small></span>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.5s">
+          <div class="skill-icon wp"><i class="fab fa-wordpress"></i></div>
+          <h4>WordPress</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.6s">
+          <div class="skill-icon figma"><i class="fab fa-figma"></i></div>
+          <h4>UI/UX Design</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-percent">75%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" style="--delay:0.1s">
+          <div class="project-image">
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="project-mockup ecommerce">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>E-Commerce Website</h3>
+            <p>A full-featured e-commerce web application with product listings, cart functionality, and a seamless shopping experience built with vanilla web technologies.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.2s">
+          <div class="project-image">
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="project-mockup booksky">
+              <i class="fas fa-book-open"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>BookSky App</h3>
+            <p>A smart reading tracker that lets users store, manage, and revisit their read books. Features a beautiful UI with bookshelf-style organization.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.3s">
+          <div class="project-image">
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="project-mockup cakezone">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>Cake Zone App</h3>
+            <p>A delightful cake ordering platform with a mouth-watering UI, product catalog, and order management features for a local bakery experience.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.4s">
+          <div class="project-image">
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="project-mockup trip">
+              <i class="fas fa-plane"></i>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>Trip Planner App</h3>
+            <p>An interactive travel planning application where users can plan itineraries, explore destinations, and organize trips with an elegant, intuitive interface.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERNSHIP SECTION -->
+  <section class="internship section" id="internship">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">My <span class="accent">Internships</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"><i class="fab fa-wordpress"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">WordPress Full Stack Developer</span>
+              <span class="timeline-badge">Internship</span>
+            </div>
+            <p>Worked on developing and customizing WordPress websites, implementing themes, plugins, and full-stack features including backend PHP logic and frontend UI enhancements.</p>
+            <div class="timeline-skills">
+              <span>WordPress</span><span>PHP</span><span>HTML/CSS</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"><i class="fab fa-figma"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">UI/UX Designer</span>
+              <span class="timeline-badge">Internship</span>
+            </div>
+            <p>Designed intuitive user interfaces and experiences using Figma. Created wireframes, prototypes, and design systems while adhering to user-centered design principles and accessibility standards.</p>
+            <div class="timeline-skills">
+              <span>Figma</span><span>Wireframing</span><span>Prototyping</span><span>UX Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Get In Touch</h3>
+          <p>Have a project in mind or want to collaborate? Feel free to reach out — I'm always open to new opportunities!</p>
+          <div class="contact-links">
+            <a href="ashwathgunasekar04@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-type">Email</span>
+                <span class="contact-value">ashwathgunasekar04@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+916374284660" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-type">Phone</span>
+                <span class="contact-value">+91 6374284660</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ashwath25/" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-type">LinkedIn</span>
+                <span class="contact-value">https://www.linkedin.com/in/ashwath25/</span>
+              </div>
+            </a>
+            <a href="https://github.com/Ashwath2511" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-type">GitHub</span>
+                <span class="contact-value">https://github.com/Ashwath2511</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="YOUR NAME" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="YOUR E-MAIL" required/>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="SUBJECT" required/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="MESSAGE....." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo"></div>
+      <p>Crafted with <i class="fas fa-heart"></i> by a passionate Frontend Developer</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/ashwath25/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Ashwath2511" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="ashwathgunasekar04@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ASHWATH. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cursor Follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</body>
+</html>
