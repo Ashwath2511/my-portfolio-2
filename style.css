@@ -467,6 +467,7 @@ img { max-width: 100%; display: block; }
 .skill-icon.react { background: rgba(97,218,251,0.1); color: var(--skill-react); }
 .skill-icon.wp { background: rgba(33,117,155,0.1); color: var(--skill-wp); }
 .skill-icon.figma { background: rgba(242,78,30,0.1); color: var(--skill-figma); }
+.skill-icon.robot { background: rgba(242,78,30,0.1); color: var(--skill-AI & Prompt engineering); }
 .skill-icon.bootstrap { background: rgba(242,78,30,0.1); color: var(--skill-bootstrap); }
 .skill-card h4 { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 14px; }
 .skill-bar {
