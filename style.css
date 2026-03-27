@@ -43,6 +43,7 @@ img { max-width: 100%; display: block; }
   --navbar-bg: rgba(5,13,26,0.92);
   --skill-html: #e44d26; --skill-css: #1572b6; --skill-js: #f7df1e;
   --skill-react: #61dafb; --skill-wp: #21759b; --skill-figma: #f24e1e;
+  --skill-java: #077B6; --skill-bootstrap: #023E8A ; --skill-python: #0096C7 ; --skill-robot: #00B4D8 ; 
 }
 
 /* MATRIX THEME */
@@ -66,6 +67,7 @@ img { max-width: 100%; display: block; }
   --navbar-bg: rgba(2,12,2,0.92);
   --skill-html: #00ff41; --skill-css: #00e639; --skill-js: #80ff80;
   --skill-react: #00cc33; --skill-wp: #00aa28; --skill-figma: #00ff80;
+    --skill-java: #000A86B; --skill-bootstrap: #006400 ; --skill-python: #228B22 ; --skill-robot: #2E8B57 ;
 }
 
 /* WHITE THEME */
@@ -89,6 +91,7 @@ img { max-width: 100%; display: block; }
   --navbar-bg: rgba(245,247,250,0.95);
   --skill-html: #e44d26; --skill-css: #1572b6; --skill-js: #d4a017;
   --skill-react: #0d87c0; --skill-wp: #21759b; --skill-figma: #f24e1e;
+    --skill-java: #FFFFFF; --skill-bootstrap: #EAEAEA ; --skill-python: #F8F9FA ; --skill-robot: #DCDCDC;
 }
 
 /* COSMIC THEME */
@@ -112,6 +115,7 @@ img { max-width: 100%; display: block; }
   --navbar-bg: rgba(10,0,18,0.92);
   --skill-html: #ff6ec7; --skill-css: #bf5fff; --skill-js: #ffd700;
   --skill-react: #7efff5; --skill-wp: #bf5fff; --skill-figma: #ff6ec7;
+    --skill-java: #6A0DAD; --skill-bootstrap: #7B2CBF ; --skill-python: #8A2BE2 ; --skill-robot: #9D4EDD;
 }
 
 /* =========================================
@@ -467,8 +471,10 @@ img { max-width: 100%; display: block; }
 .skill-icon.react { background: rgba(97,218,251,0.1); color: var(--skill-react); }
 .skill-icon.wp { background: rgba(33,117,155,0.1); color: var(--skill-wp); }
 .skill-icon.figma { background: rgba(242,78,30,0.1); color: var(--skill-figma); }
-.skill-icon.robot { background: rgba(242,78,30,0.1); color: var(--skill-AI & Prompt engineering); }
+.skill-icon.robot { background: rgba(242,78,30,0.1); color: var(--skill-robot); }
 .skill-icon.bootstrap { background: rgba(242,78,30,0.1); color: var(--skill-bootstrap); }
+.skill-icon.java { background: rgba(242,78,30,0.1); color: var(--skill-java); }
+.skill-icon.python { background: rgba(242,78,30,0.1); color: var(--skill-python); }
 .skill-card h4 { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 14px; }
 .skill-bar {
   height: 6px; background: var(--bg-secondary); border-radius: 6px;
