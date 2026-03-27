@@ -301,8 +301,9 @@ function initContactForm() {
 // =========================================
 function initTypingEffect() {
   const roles = [
-    'Frontend Developer',
+    'Full Stack Developer',
     'UI/UX Enthusiast',
+    'AI & Prompt Expert',
     'React Developer',
     'Web Designer'
   ];
