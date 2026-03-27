@@ -91,7 +91,7 @@ img { max-width: 100%; display: block; }
   --navbar-bg: rgba(245,247,250,0.95);
   --skill-html: #e44d26; --skill-css: #1572b6; --skill-js: #d4a017;
   --skill-react: #0d87c0; --skill-wp: #21759b; --skill-figma: #f24e1e;
-    --skill-java: #FFFFFF; --skill-bootstrap: #EAEAEA ; --skill-python: #F8F9FA ; --skill-robot: #DCDCDC;
+    --skill-java: #0d87c0; --skill-bootstrap: #0d87c0 ; --skill-python: #0d87c0 ; --skill-robot: #0d87c0;
 }
 
 /* COSMIC THEME */
