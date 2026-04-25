@@ -1,0 +1,15 @@
+# API Keys & Secrets
+config.js
+
+# Environment
+.env
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -10,6 +10,43 @@
 </head>
 <body>
 
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="loader-particles" id="loaderParticles"></div>
+    <div class="loader-grid-bg"></div>
+    <div class="loader-content">
+      <div class="loader-rings">
+        <div class="loader-ring ring-1"></div>
+        <div class="loader-ring ring-2"></div>
+        <div class="loader-ring ring-3"></div>
+      </div>
+      <div class="loader-logo">
+        <span class="loader-letter" data-text="A">ASHWATH   G </span>
+        <span class="loader-letter" data-text="G"> </span>
+      </div>
+      <div class="loader-tagline">
+        <span class="loader-tag-word">INITIALIZING</span>
+        <span class="loader-dots"><span>.</span><span>.</span><span>.</span></span>
+      </div>
+      <div class="loader-progress-track">
+        <div class="loader-progress-bar" id="loaderProgressBar"></div>
+        <div class="loader-progress-glow" id="loaderProgressGlow"></div>
+      </div>
+      <div class="loader-percent" id="loaderPercent">0%</div>
+    </div>
+    <div class="loader-corner loader-corner-tl"></div>
+    <div class="loader-corner loader-corner-tr"></div>
+    <div class="loader-corner loader-corner-bl"></div>
+    <div class="loader-corner loader-corner-br"></div>
+    <div class="loader-scanline"></div>
+  </div>
+
+  <!-- FULL-PAGE PARTICLE CANVAS -->
+  <canvas id="bgCanvas" class="bg-canvas"></canvas>
+
+  <!-- ANIMATED BACKGROUND GRID -->
+  <div class="bg-grid"></div>
+
   <!-- THEME SWITCHER -->
   <div class="theme-switcher">
     <span class="theme-label">THEME</span>
@@ -19,18 +56,21 @@
     <button class="theme-btn" data-theme="matrix" title="Matrix Green">
       <span class="theme-dot matrix-dot"></span>
     </button>
-    <button class="theme-btn" data-theme="white" title="Clean White">
+    <button class="theme-btn" data-theme="white" title="Midnight Black">
       <span class="theme-dot white-dot"></span>
     </button>
     <button class="theme-btn" data-theme="cosmic" title="Cosmic Purple">
       <span class="theme-dot cosmic-dot"></span>
+    </button>
+    <button class="theme-btn" data-theme="darkfuture" title="Dark Futuristic">
+      <span class="theme-dot darkfuture-dot"></span>
     </button>
   </div>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-logo">
-      <span class="logo-text"></span>
+      <span class="logo-text">AG</span>
     </div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
@@ -43,7 +83,7 @@
     <div class="nav-socials">
       <a href="https://www.linkedin.com/in/ashwath25/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://github.com/Ashwath2511" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="ashwathgunasekar04@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:ashwathgunasekar04@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       <a href="tel:+916374284660" title="Call"><i class="fas fa-phone"></i></a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -57,21 +97,23 @@
       <div class="shape shape-1"></div>
       <div class="shape shape-2"></div>
       <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
     </div>
     <div class="hero-content">
       <div class="hero-text">
         <div class="hero-tag reveal-up"> Full-stack Developer</div>
         <h1 class="hero-title reveal-up">
           Hi, I'm <br/>
-          <span class="name-highlight">ASHWATH G</span>
+          <span class="name-highlight" data-text="ASHWATH G">ASHWATH G</span>
         </h1>
         <p class="hero-sub reveal-up">
           Crafting beautiful, interactive web experiences.<br/>
           B.Tech IT Student @ Panimalar Engineering College
         </p>
         <div class="hero-cta reveal-up">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Hire Me</a>
+          <a href="#projects" class="btn btn-primary magnetic-btn"><span>View Projects</span></a>
+          <a href="#contact" class="btn btn-outline magnetic-btn"><span>Hire Me</span></a>
         </div>
         <div class="hero-stats reveal-up">
           <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
@@ -103,7 +145,7 @@
     <div class="container">
       <div class="section-header reveal-up">
         <span class="section-tag">Who Am I</span>
-        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <h2 class="section-title" data-text="About Me">About <span class="accent">Me</span></h2>
       </div>
       <div class="about-grid">
         <div class="about-card reveal-left">
@@ -139,7 +181,7 @@
     <div class="container">
       <div class="section-header reveal-up">
         <span class="section-tag">What I Know</span>
-        <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+        <h2 class="section-title" data-text="Tech Stack">Tech <span class="accent">Stack</span></h2>
       </div>
       <div class="skills-grid">
         <div class="skill-card reveal-up" style="--delay:0.1s">
@@ -184,19 +226,19 @@
           <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
           <span class="skill-percent">90%</span>
         </div>
-          <div class="skill-card reveal-up" style="--delay:0.6s">
+        <div class="skill-card reveal-up" style="--delay:0.7s">
           <div class="skill-icon bootstrap"><i class="fab fa-bootstrap"></i></div>
           <h4>BootStrap</h4>
           <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
           <span class="skill-percent">80%</span>
         </div>
-        <div class="skill-card reveal-up" style="--delay:0.6s">
+        <div class="skill-card reveal-up" style="--delay:0.8s">
           <div class="skill-icon java"><i class="fab fa-java"></i></div>
           <h4>Java</h4>
           <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
           <span class="skill-percent">75%</span>
         </div>
-        <div class="skill-card reveal-up" style="--delay:0.6s">
+        <div class="skill-card reveal-up" style="--delay:0.9s">
           <div class="skill-icon python"><i class="fab fa-python"></i></div>
           <h4>Python</h4>
           <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
@@ -211,7 +253,7 @@
     <div class="container">
       <div class="section-header reveal-up">
         <span class="section-tag">What I've Built</span>
-        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <h2 class="section-title" data-text="My Projects">My <span class="accent">Projects</span></h2>
       </div>
       <div class="projects-grid">
 
@@ -300,7 +342,7 @@
     <div class="container">
       <div class="section-header reveal-up">
         <span class="section-tag">Experience</span>
-        <h2 class="section-title">My <span class="accent">Internships</span></h2>
+        <h2 class="section-title" data-text="My Internships">My <span class="accent">Internships</span></h2>
       </div>
       <div class="timeline">
         <div class="timeline-item reveal-left">
@@ -338,14 +380,14 @@
     <div class="container">
       <div class="section-header reveal-up">
         <span class="section-tag">Let's Talk</span>
-        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+        <h2 class="section-title" data-text="Contact Me">Contact <span class="accent">Me</span></h2>
       </div>
       <div class="contact-grid">
         <div class="contact-info reveal-left">
           <h3>Get In Touch</h3>
           <p>Have a project in mind or want to collaborate? Feel free to reach out — I'm always open to new opportunities!</p>
           <div class="contact-links">
-            <a href="ashwathgunasekar04@gmail.com" class="contact-item">
+            <a href="mailto:ashwathgunasekar04@gmail.com" class="contact-item">
               <div class="contact-icon"><i class="fas fa-envelope"></i></div>
               <div>
                 <span class="contact-type">Email</span>
@@ -401,8 +443,8 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5" placeholder="MESSAGE....." required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">
-              <i class="fas fa-paper-plane"></i> Send Message
+            <button type="submit" class="btn btn-primary btn-full magnetic-btn">
+              <i class="fas fa-paper-plane"></i> <span>Send Message</span>
             </button>
             <div class="form-status" id="formStatus"></div>
           </form>
@@ -419,7 +461,7 @@
       <div class="footer-socials">
         <a href="https://www.linkedin.com/in/ashwath25/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/Ashwath2511" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="ashwathgunasekar04@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:ashwathgunasekar04@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -427,11 +469,28 @@
     </div>
   </footer>
 
+  <!-- Success Modal Overlay -->
+  <div class="success-modal" id="successModal">
+    <div class="success-modal-content">
+      <div class="success-icon-container">
+        <svg class="success-svg" viewBox="0 0 52 52">
+          <circle class="success-circle" cx="26" cy="26" r="25" fill="none" />
+          <path class="success-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+        </svg>
+      </div>
+      <h3 class="success-title">Message Sent!</h3>
+      <p class="success-message">Thank you for reaching out. I'll get back to you shortly.</p>
+    </div>
+  </div>
+
   <!-- Cursor Follower -->
   <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-outline" id="cursorOutline"></div>
 
-  <script src="script.js"></script>
+  <!-- EmailJS SDK (must load before script.js) -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Config (API Keys — gitignored) -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
